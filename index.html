@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="google-site-verification" content="pKSFRutNDKJTFI...">
 <title>Sanjeevani Hospitals Bhimavaram</title>
 
 <!-- Google Fonts -->
@@ -33,7 +33,7 @@
     <div>
         <h1>Quality Healthcare You Can Trust</h1>
         <p>Expert doctors. Advanced care. Friendly service.</p>
-        <a href="#contact" class="btn">Book Appointment</a>
+       <a href="appointment.html" class="btn">Book Appointment</a>
     </div>
 </section>
 
@@ -84,14 +84,41 @@
 <!-- CONTACT -->
 <section id="contact" class="section">
     <h2>Contact Us</h2>
-    <p><i class="fa-solid fa-phone"></i> 9494282412 | 9581766666</p>
-    <p><i class="fa-solid fa-location-dot"></i> Near Railway Gate, Bhimavaram</p>
+    <p>📞 9494282412 | 9581766666</p>
+    <p>📍 Near Railway Gate, Bhimavaram</p>
 
     <a href="https://wa.me/919494282412" class="btn whatsapp">
         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
     </a>
-</section>
 
+    <!-- PASTE BELOW THIS -->
+
+    <div class="qr-section">
+
+        <h2>Connect With Us</h2>
+
+
+
+        <div class="links">
+            <a href="https://instagram.com/sanjeevani.hos" target="_blank" class="btn">📸 Instagram</a>
+
+            <a href="https://maps.google.com/?q=Sanjeevani+Hospital+Bhimavaram" target="_blank" class="btn">⭐ Review Us</a>
+
+            <a href="https://wa.me/919494282412" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- BOOK APPOINTMENT SECTION -->
+    <form onsubmit="sendToWhatsApp(); return false;" class="form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+</section>
 <!-- FOOTER -->
 <footer>
     <p>© 2026 Sanjeevani Hospitals</p>
