@@ -111,3 +111,22 @@ footer {
 .whatsapp {
     background: #25D366;
 }
+.qr-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.qr-box img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 10px;
+    display: inline-block;
+}
