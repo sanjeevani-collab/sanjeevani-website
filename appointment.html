@@ -4,22 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book Appointment</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<section class="section">
+ <section class="section fade-in">
+    <a href="index.html" class="btn">← Back to Home</a>
+
     <h2>Book Appointment</h2>
 
-    <form onsubmit="sendToWhatsApp(); return false;" class="form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="tel" id="phone" placeholder="Phone Number" required>
-        <input type="date" id="date" required>
-        <input type="time" id="time" required>
+     <form onsubmit="sendToWhatsApp(); return false;" class="form">
+     <input type="text" id="name" placeholder="Your Name" required>
+     <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+     <input type="date" id="date" required>
+     <input type="time" id="time" required>
 
-        <button type="submit">Book Now</button>
-    </form>
+    <!-- ADD THIS HERE -->
+    <select id="doctor" required>
+        <option value="">Select Doctor</option>
+        <option>Dr. P. Uma Madhulatha</option>
+        <option>Dr. I. Venkata Kiran Kumar Raju</option>
+    </select>
+
+    <button type="submit">Book Now</button>
+</form>
 </section>
 
 <script>
@@ -28,8 +38,17 @@ function sendToWhatsApp() {
     let phone = document.getElementById("phone").value;
     let date = document.getElementById("date").value;
     let time = document.getElementById("time").value;
+    let doctor = document.getElementById("doctor").value;
 
-    let message = `Appointment:%0AName: ${name}%0APhone: ${phone}%0ADate: ${date}%0ATime: ${time}`;
+    let message = `*Sanjeevani Hospital Appointment*%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Doctor: ${doctor}%0A
+Date: ${date}%0A
+Time: ${time}`;
+
+    // 👉 ADD THIS LINE (alert)
+    alert("Opening WhatsApp to confirm your appointment…");
 
     let url = "https://wa.me/919494282412?text=" + message;
 
