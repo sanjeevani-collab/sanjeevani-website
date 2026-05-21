@@ -300,3 +300,40 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+@media(max-width:768px){
+
+header{
+    flex-direction: column;
+    padding: 15px;
+}
+
+nav{
+    margin-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.features{
+    flex-direction: column;
+    gap:20px;
+}
+
+.cards{
+    flex-direction: column;
+    align-items:center;
+}
+
+.hero div{
+    padding:20px;
+}
+
+.feature{
+    margin-bottom:15px;
+}
+
+}
