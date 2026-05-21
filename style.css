@@ -75,6 +75,9 @@ nav a {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+.btn:active{
+    transform:scale(0.98);
+}
 /* FEATURES */
 .features {
     display: flex;
@@ -134,6 +137,7 @@ nav a {
 
 .card:hover {
     transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
