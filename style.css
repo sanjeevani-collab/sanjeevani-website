@@ -348,3 +348,37 @@ footer p{
     margin:5px;
     font-size:14px;
 }
+footer p{
+    margin:5px;
+    font-size:14px;
+}
+
+/* Telephone Links */
+#contact a[href^="tel"]{
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#contact a[href^="tel"]:hover{
+    color: #00b894;
+    text-decoration: underline;
+}
+
+/* Call Button */
+.call-btn{
+    background: linear-gradient(45deg,#3498db,#2980b9);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.call-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
