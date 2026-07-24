@@ -40,19 +40,19 @@ function sendToWhatsApp() {
     let time = document.getElementById("time").value;
     let doctor = document.getElementById("doctor").value;
 
-    let message = `*Sanjeevani Hospital Appointment*%0A
-Name: ${name}%0A
-Phone: ${phone}%0A
-Doctor: ${doctor}%0A
-Date: ${date}%0A
-Time: ${time}`;
+ let message = encodeURIComponent(
+`🏥 Sanjeevani Hospital Appointment
 
-    // 👉 ADD THIS LINE (alert)
-    alert("Opening WhatsApp to confirm your appointment…");
+Name: ${name}
+Phone: ${phone}
+Doctor: ${doctor}
+Date: ${date}
+Time: ${time}`
+);
+alert("Opening WhatsApp to confirm your appointment...");
 
-    let url = "https://wa.me/919494282412?text=" + message;
-
-    window.open(url, "_blank");
+let url = "https://wa.me/919494282412?text=" + message;
+window.open(url, "_blank");
 }
 </script>
 
