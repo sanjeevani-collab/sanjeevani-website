@@ -331,19 +331,31 @@ footer p{
 
 /* Call Button */
 .call-btn{
-    background: linear-gradient(45deg,#3498db,#2980b9);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-    transition: 0.3s;
+
+    padding: 14px 28px;
+    border-radius: 50px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.call-btn i{
+    color: #ffffff;
 }
 
 .call-btn:hover{
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .form label{
