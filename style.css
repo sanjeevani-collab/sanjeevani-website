@@ -30,13 +30,6 @@ header h2 {
     font-family: 'Montserrat', sans-serif;
     color: #2ecc71;
 }
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-}
-
 /* HERO */
 .hero {
     height: 95vh;
@@ -171,10 +164,6 @@ footer {
     margin: 10px;
     display: inline-block;
 }
-.section {
-    padding: 60px 20px;
-}
-
 .section form {
     background: white;
     padding: 30px;
@@ -186,12 +175,6 @@ footer {
 .section form:hover {
     transform: translateY(-5px);
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #ffffff);
-    animation: bgMove 6s infinite alternate;
-}
-
 @keyframes bgMove {
     0% { background-position: left; }
     100% { background-position: right; }
@@ -221,21 +204,6 @@ body {
 .form button:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 .logo {
     display: flex;
     align-items: center;
@@ -348,11 +316,6 @@ footer p{
     margin:5px;
     font-size:14px;
 }
-footer p{
-    margin:5px;
-    font-size:14px;
-}
-
 /* Telephone Links */
 #contact a[href^="tel"]{
     color: #2ecc71;
